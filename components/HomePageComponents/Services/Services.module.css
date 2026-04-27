@@ -1,0 +1,118 @@
+.services-container {
+  height: 700dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+
+  /* masking */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.section-heading {
+  position: sticky;
+  top: 6rem;
+  font-size: 4rem;
+  font-weight: 200;
+  line-height: 1.2;
+  text-align: center;
+  will-change: transform, opacity;
+  white-space: nowrap;
+  z-index: 23;
+}
+
+.services-circle-container {
+  position: sticky;
+  top: 0;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #000;
+}
+
+/* .service-name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+} */
+
+.serviceNameContainer {
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.wordFirst,
+.wordSecond {
+  font-weight: 400;
+  font-size: 12rem;
+  display: block;
+  white-space: nowrap;
+  /* Smooth fade out at the bottom */
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    #fff 0%,
+    #fff 45%,
+    transparent 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(180deg, #fff 0%, #fff 45%, transparent 100%);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.wordFirst {
+  min-width: 50%;
+  text-align: right;
+  margin-right: auto;
+  opacity: 0.8 !important;
+}
+
+.wordSecond {
+  margin-left: auto;
+  opacity: 0.2 !important;
+}
+
+/* .service-name-container h2 {
+  font-weight: 400;
+  font-size: 15rem;
+  opacity: 0.05;
+}
+
+.first-heading {
+  margin-left: -5rem;
+}
+.second-heading {
+  margin-left: 55rem;
+} */

@@ -1,0 +1,13 @@
+.carouselWrapper {
+  width: 100%;
+  position: relative;
+  height: 250vh;
+  /* padding-left: 5rem; */
+}
+
+.testimonialsInner {
+  position: sticky;
+  top: 10rem;
+  display: flex;
+  gap: 2rem;
+}

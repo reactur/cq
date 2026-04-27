@@ -1,0 +1,5 @@
+.section {
+  position: relative;
+  width: 100dvw;
+  height: 300dvh; /* big enough to scroll through the effect */
+}

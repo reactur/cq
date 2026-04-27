@@ -1,0 +1,54 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.headerBlind,
+.footerBlind,
+.headerBlindDummy {
+  position: absolute;
+  width: 100%;
+  transition: all 1.5s ease;
+}
+
+.headerBlind {
+  height: fit-content;
+  top: 0;
+  transform: translateY(43dvh);
+  display: flex;
+  align-items: flex-end;
+  /* background-color: red; */
+}
+
+.headerBlindDummy {
+  height: 50dvh;
+  top: 0;
+  background-color: #111;
+}
+
+.footerBlind {
+  height: 50dvh;
+  bottom: 0;
+  transform: translateY(0%);
+  background-color: #111;
+}
+
+.animate .headerBlind {
+  transform: translateY(0dvh);
+  background-color: transparent;
+  height: fit-content;
+}
+
+.animate .headerBlindDummy {
+  transform: translateY(-50dvh);
+}
+
+.animate .footerBlind {
+  transform: translateY(110%);
+}

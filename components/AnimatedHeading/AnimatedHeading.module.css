@@ -1,0 +1,25 @@
+.scrollWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* stick child to bottom */
+  height: 150dvh; /* so you can scroll */
+  width: 100dvw;
+}
+
+.bottomTextContainer {
+  position: sticky;
+  top: 0;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  margin-top: auto;
+  color: white;
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.1;
+  transform-origin: bottom; /* scaleY grows upward */
+}

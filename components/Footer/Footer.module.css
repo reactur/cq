@@ -1,0 +1,95 @@
+.footer {
+  background-color: #111111;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 12rem;
+  cursor: pointer;
+}
+
+.brand {
+  color: var(--primary-blue);
+}
+
+.description {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.heading {
+  font-size: 1.1rem;
+  color: white;
+  border-left: 2px solid var(--primary-blue);
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Scoped list styling */
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column li {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.column li:hover {
+  color: #fff;
+}
+
+.socialText {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.socialIcons svg {
+  color: white;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.socialIcons svg:hover {
+  color: var(--primary-blue);
+}
+
+.copy {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.language {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  text-align: right;
+  color: #aaa;
+}

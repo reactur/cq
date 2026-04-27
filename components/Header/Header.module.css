@@ -1,0 +1,28 @@
+.Header {
+  /* position: fixed;
+  top: 0; */
+  box-sizing: border-box;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.1);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  pointer-events: auto;
+}
+
+.Header a {
+  display: flex;
+  align-items: center;
+}
+
+.Header img {
+  width: 12rem;
+  cursor: pointer;
+}

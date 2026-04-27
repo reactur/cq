@@ -1,0 +1,25 @@
+.circle {
+  border-radius: 50%;
+  overflow: visible;
+}
+
+.slice {
+  opacity: 0.2;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.slice:hover {
+  opacity: 1;
+  filter: brightness(1.1) drop-shadow(0 0 8px currentColor);
+}
+
+.active {
+  transform: scale(1.1); /* pop out */
+  opacity: 1;
+  filter: brightness(1.1) drop-shadow(0 0 8px currentColor);
+}
+
+.inactive {
+  opacity: 0.2; /* faded when another is active */
+}

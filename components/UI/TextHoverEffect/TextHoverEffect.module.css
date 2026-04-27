@@ -1,0 +1,33 @@
+.svg {
+  user-select: none;
+}
+
+.textBase {
+  fill: transparent;
+  stroke: #e5e5e5; /* neutral outline */
+  stroke-width: 0.3;
+  font-size: 4.5rem; /* ~text-7xl */
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.textVisible {
+  opacity: 0.7;
+}
+
+/* Stroke-draw animation */
+.textAnimated {
+  fill: transparent;
+  stroke: #e5e5e5;
+  stroke-width: 0.3;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+/* Gradient-revealed text */
+.textGradient {
+  fill: transparent;
+  stroke-width: 0.3;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
